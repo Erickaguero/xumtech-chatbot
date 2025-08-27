@@ -1,0 +1,14 @@
+[
+{"question": "¿Cuáles son los horarios de soporte?", "answer": "Lun a Vie 8:00–18:00 (GMT-6) y Sáb 9:00–13:00 por chat y correo.", "tags": ["soporte","horario","atención"]},
+{"question": "¿Cómo restablezco mi contraseña?", "answer": "En el login, elegí ‘¿Olvidaste tu contraseña?’, ingresá tu correo y seguí el enlace para crear una nueva.", "tags": ["cuenta","seguridad","contraseña"]},
+{"question": "¿Qué navegadores son compatibles?", "answer": "Últimas versiones de Chrome, Edge, Firefox y Safari. Internet Explorer no es compatible.", "tags": ["navegador","compatibilidad"]},
+{"question": "¿Cómo actualizo mis datos de facturación?", "answer": "Ir a Cuenta → Facturación → Métodos de pago; editá tarjeta o datos de empresa y guardá.", "tags": ["pagos","factura","tarjeta"]},
+{"question": "¿Dónde descargo la app de escritorio?", "answer": "Ajustes → Descargas; elegí Windows o macOS (Win 10+ / macOS 10.13+).", "tags": ["app","escritorio","descarga"]},
+{"question": "¿Cómo abro un ticket de soporte?", "answer": "En el Centro de Ayuda, pulsá ‘Nuevo ticket’, describí el problema y adjuntá capturas. Te llega confirmación por correo.", "tags": ["soporte","ticket","ayuda"]},
+{"question": "¿Puedo cambiar mi plan?", "answer": "Sí, en Cuenta → Suscripción seleccioná el nuevo plan. El cambio se prorratea en el próximo ciclo.", "tags": ["suscripción","plan","upgrade"]},
+{"question": "¿Cómo cancelo mi suscripción?", "answer": "En Cuenta → Suscripción, elegí ‘Cancelar’ y completá la encuesta. Podés reactivar cuando quieras.", "tags": ["suscripción","cancelar","baja"]},
+{"question": "¿Cómo exporto mis datos?", "answer": "En Datos → Exportar, descargá CSV o JSON. Te enviamos un enlace temporal por correo.", "tags": ["datos","exportar","descarga"]},
+{"question": "¿Qué hacer si la página carga lento?", "answer": "Limpiá caché, desactivá extensiones y verificá tu conexión. Si continúa, abrí un ticket con fecha/hora y URL.", "tags": ["rendimiento","lento","performance"]},
+{"question": "¿Cómo contacto a ventas?", "answer": "Escribí a ventas@ejemplo.com o completá el formulario en /contacto para agendar una demo.", "tags": ["ventas","contacto","demo"]},
+{"question": "¿Tienen autenticación en dos pasos (2FA)?", "answer": "Sí. Activala en Cuenta → Seguridad → 2FA usando una app autenticadora (TOTP).", "tags": ["seguridad","2fa","autenticación"]}
+]

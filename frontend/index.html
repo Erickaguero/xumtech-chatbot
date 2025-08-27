@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mini Chatbot Xumtech</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="title">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Mini Chatbot Xumtech</h1>
+      </div>
+      <div class="status" id="status">
+        <span class="dot" id="dot"></span>
+        <span id="status-text">Conectando…</span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- Chat -->
+      <section class="card chat" aria-label="Chat">
+        <div class="messages" id="messages" role="log" aria-live="polite"></div>
+        <div class="composer">
+          <input id="input" class="input" type="text" placeholder="Escribe tu pregunta… (Enter para enviar)" autocomplete="off" />
+          <button id="send" class="btn">Enviar</button>
+        </div>
+      </section>
+
+      <!-- Side panel -->
+      <aside class="card side" aria-label="Ayuda">
+        <div class="section">
+          <h3>Preguntas frecuentes</h3>
+          <div id="faq-list">Cargando…</div>
+        </div>
+        <div class="section">
+          <h3>Consejos</h3>
+          <ul style="margin:0; padding-left:18px; color:var(--muted); font-size:13px; line-height:1.4">
+            <li>Haz preguntas cortas y directas.</li>
+            <li>Si la respuesta es ambigua, haz clic en una sugerencia.</li>
+            <li>Atajo: presiona <code class="inline">Enter</code> para enviar.</li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    // ===== Config =====
+    const API_BASE = ''; // cambia si tu backend corre en otro host/puerto
+    const MAX_FAQS_SHOWN = 9;       // ✨ máximo de chips en la derecha
+    const MAX_SUGGESTIONS = 5;       // (por si acaso) límite de sugerencias en mensajes
+
+    // ===== Helpers =====
+    const $ = (sel) => document.querySelector(sel);
+    const esc = (s = '') => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+
+    function appendMsg(role, html, meta = '') {
+      const wrap = document.createElement('div');
+      wrap.className = `msg ${role}`;
+      wrap.innerHTML = `\n        <div class="bubble">${html}</div>\n      `;
+      $('#messages').appendChild(wrap);
+      if (meta) {
+        const m = document.createElement('div');
+        m.className = 'meta';
+        m.textContent = meta;
+        wrap.appendChild(m);
+      }
+      // scroll to bottom
+      const cont = $('#messages');
+      cont.scrollTop = cont.scrollHeight;
+      return wrap;
+    }
+
+    function typingMsg() {
+      return `<span class="typing" aria-label="escribiendo"><span></span><span></span><span></span></span>`;
+    }
+
+    async function healthcheck() {
+      try {
+        const r = await fetch(API_BASE + '/health');
+        const j = await r.json();
+        $('#dot').className = 'dot ' + (j.nlp_ready ? 'ok' : 'warn');
+        $('#status-text').textContent = j.nlp_ready ? 'Listo' : 'Listo (NLP en inicio)';
+      } catch (e) {
+        $('#dot').className = 'dot err';
+        $('#status-text').textContent = 'Sin conexión';
+      }
+    }
+
+    async function loadFaqs() {
+      const box = $('#faq-list');
+      box.textContent = 'Cargando…';
+      try {
+        const r = await fetch(API_BASE + '/api/faq');
+        const faqs = await r.json();
+        if (!Array.isArray(faqs) || faqs.length === 0) { box.textContent = 'Sin FAQs disponibles.'; return; }
+
+        box.innerHTML = '';
+
+        const addChip = ({question}) => {
+          const chip = document.createElement('button');
+          chip.className = 'chip';
+          chip.type = 'button';
+          chip.textContent = question;
+          chip.addEventListener('click', () => { $('#input').value = question; sendCurrent(); });
+          box.appendChild(chip);
+        };
+
+        // primeras MAX_FAQS_SHOWN
+        faqs.slice(0, MAX_FAQS_SHOWN).forEach(addChip);
+
+        // botón mostrar más/menos (opcional)
+        if (faqs.length > MAX_FAQS_SHOWN) {
+          const moreBtn = document.createElement('button');
+          moreBtn.className = 'chip';
+          moreBtn.textContent = `Mostrar ${faqs.length - MAX_FAQS_SHOWN} más`;
+          moreBtn.dataset.expanded = '0';
+          moreBtn.addEventListener('click', () => {
+            if (moreBtn.dataset.expanded === '0') {
+              faqs.slice(MAX_FAQS_SHOWN).forEach(q => {
+                const extra = document.createElement('span');
+                extra.className = 'extra-chip';
+                // reutilizamos addChip en un contenedor temporal
+                const prevCount = box.childElementCount;
+                addChip(q);
+                const newChip = box.children[box.childElementCount - 1];
+                newChip.setAttribute('data-extra', '1');
+              });
+              moreBtn.textContent = 'Mostrar menos';
+              moreBtn.dataset.expanded = '1';
+            } else {
+              box.querySelectorAll('[data-extra="1"]').forEach(n => n.remove());
+              moreBtn.textContent = `Mostrar ${faqs.length - MAX_FAQS_SHOWN} más`;
+              moreBtn.dataset.expanded = '0';
+            }
+          });
+          box.appendChild(moreBtn);
+        }
+      } catch (e) {
+        box.innerHTML = `<span style="color:#fca5a5">Error al cargar FAQs</span>`;
+      }
+    }
+
+    function renderSuggestions(alt = []) {
+      if (!alt || alt.length === 0) return '';
+      const chips = alt.map(a => `<button class="chip" data-suggest>${esc(a)}</button>`).join('');
+      return `<div style="margin-top:8px">${chips}</div>`;
+    }
+
+    async function ask(message) {
+      const body = JSON.stringify({ message });
+      const r = await fetch(API_BASE + '/api/query', {
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body
+      });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return r.json();
+    }
+
+    function attachSuggestionHandlers(scopeEl) {
+      scopeEl.querySelectorAll('[data-suggest]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const text = btn.textContent || '';
+          $('#input').value = text;
+          sendCurrent();
+        });
+      });
+    }
+
+    async function sendCurrent() {
+      const input = $('#input');
+      const sendBtn = $('#send');
+      const msg = input.value.trim();
+      if (!msg) return;
+      input.value = '';
+      input.focus();
+      sendBtn.disabled = true;
+
+      appendMsg('user', esc(msg));
+      const botContainer = appendMsg('bot', typingMsg());
+
+      try {
+        const res = await ask(msg);
+        let html = '';
+        let meta = '';
+        if (res.status === 'understood') {
+          html = `${esc(res.answer || '—')}`;
+          meta = `✔ Entendido · Coincidencia: ${res.matched_question || '—'} · confianza ${(res.confidence*100).toFixed(0)}%`;
+        } else if (res.status === 'ambiguous') {
+          html = `No estoy 100% seguro. ¿Te referías a alguna de estas?${renderSuggestions(res.alternatives)}`;
+          meta = `¿Ambiguo? · Coincidencia: ${res.matched_question || '—'} · conf ${(res.confidence*100).toFixed(0)}%`;
+        } else {
+          html = `No entendí tu consulta. ¿Quizás te ayudas con estas?${renderSuggestions(res.alternatives)}`;
+          meta = `No comprendido · conf ${(res.confidence*100).toFixed(0)}%`;
+        }
+        botContainer.querySelector('.bubble').innerHTML = html;
+        botContainer.querySelector('.meta')?.remove();
+        const m = document.createElement('div'); m.className = 'meta'; m.textContent = meta; botContainer.appendChild(m);
+        attachSuggestionHandlers(botContainer);
+      } catch (e) {
+        botContainer.querySelector('.bubble').innerHTML = `<span style="color:#fca5a5">Error al consultar el bot.</span>`;
+      } finally {
+        sendBtn.disabled = false;
+      }
+    }
+
+    // ===== Wire up =====
+    $('#send').addEventListener('click', sendCurrent);
+    $('#input').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendCurrent(); }
+    });
+
+    // Intro message
+    appendMsg('bot', `¡Hola! Soy el mini bot de <b>Xumtech</b> 💬\nEscribí tu consulta o haz clic en una FAQ a la derecha.`);
+
+    // Boot
+    healthcheck();
+    loadFaqs();
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+[
+  {
+    "question": "Hola (buenas, hey, holi, qué tal)",
+    "answer": "¡Hola! 👋 ¿Cómo puedo ayudarte hoy?",
+    "tags": ["smalltalk", "saludo"]
+  },
+  {
+    "question": "Buenos días (buen día)",
+    "answer": "¡Buenos días! 🌞 ¿En qué te ayudo?",
+    "tags": ["smalltalk", "saludo"]
+  },
+  {
+    "question": "Buenas tardes (buena tarde)",
+    "answer": "¡Buenas tardes! 👋 ¿Qué necesitas?",
+    "tags": ["smalltalk", "saludo"]
+  },
+  {
+    "question": "Buenas noches (buena noche)",
+    "answer": "¡Buenas noches! 🌙 ¿En qué te puedo ayudar?",
+    "tags": ["smalltalk", "saludo"]
+  },
+  {
+    "question": "¿Cómo estás? (qué tal, cómo te va, cómo andas)",
+    "answer": "¡Muy bien, gracias por preguntar! ¿Y tú?",
+    "tags": ["smalltalk", "cortesia"]
+  },
+  {
+    "question": "Gracias (muchas gracias, mil gracias, gracias totales)",
+    "answer": "¡Con mucho gusto! 🙌",
+    "tags": ["smalltalk", "agradecimiento"]
+  },
+  {
+    "question": "De nada (no hay problema, con gusto, para servirte)",
+    "answer": "😊 Me alegra ayudarte siempre.",
+    "tags": ["smalltalk", "agradecimiento"]
+  },
+  {
+    "question": "Adiós (chao, hasta luego, nos vemos)",
+    "answer": "¡Hasta pronto! 👋",
+    "tags": ["smalltalk", "despedida"]
+  },
+  {
+    "question": "Nos vemos (cuídate, hasta pronto, hablamos luego)",
+    "answer": "¡Claro, cuídate mucho! 🙌",
+    "tags": ["smalltalk", "despedida"]
+  },
+  {
+    "question": "¿Quién eres? (qué eres, quién me responde, quién habla)",
+    "answer": "Soy un asistente virtual listo para ayudarte 😉",
+    "tags": ["smalltalk", "identidad"]
+  },
+  {
+    "question": "¿Eres un robot? (eres humano, eres persona, eres máquina)",
+    "answer": "Soy un chatbot diseñado para responder tus dudas 🤖",
+    "tags": ["smalltalk", "identidad"]
+  },
+  {
+    "question": "¿Qué puedes hacer? (qué haces, en qué ayudas, cómo me sirves)",
+    "answer": "Puedo responder tus dudas sobre productos, pedidos y más. Pregúntame lo que quieras 😉",
+    "tags": ["smalltalk", "funcionalidad"]
+  },
+  {
+    "question": "No entiendo (qué, repite, no me queda claro)",
+    "answer": "Lo siento, ¿podrías repetirlo de otra forma? 🤔",
+    "tags": ["smalltalk", "confusion"]
+  },
+  {
+    "question": "Ok (está bien, entendido, dale, perfecto)",
+    "answer": "¡Perfecto! 👍",
+    "tags": ["smalltalk", "confirmacion"]
+  },
+  {
+    "question": "Jaja (jajaja, jeje, jiji, jaj, 😂)",
+    "answer": "😄 Me alegra sacarte una sonrisa.",
+    "tags": ["smalltalk", "humor"]
+  }
+]
