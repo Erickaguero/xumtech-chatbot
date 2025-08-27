@@ -581,6 +581,57 @@
     "question": "¿Cómo me puedo comunicar con XUMTECH? (contacto, cómo hablar con ellos, teléfono, email)",
     "answer": "Podés contactarlos vía su formulario en la web https://www.xum-tech.com/contacto, por correo info@xum-tech.com o llamar al +506 2230 7000.",
     "tags": ["contacto", "informacion"]
+  },
+
+   {
+    "question": "¿Quién es Erick Aguero? (quién eres, quién me responde, quién habla)",
+    "answer": "Erick Aguero es Ingeniero en Informática, especialista en desarrollo de software y soluciones tecnológicas.",
+    "tags": ["identidad", "perfil"]
+  },
+  {
+    "question": "¿Qué hace Erick Aguero? (a qué te dedicas, qué trabajas, cuál es tu trabajo)",
+    "answer": "Se dedica a desarrollo de software, integración de sistemas y proyectos de tecnología con impacto social.",
+    "tags": ["trabajo", "profesion"]
+  },
+  {
+    "question": "¿Dónde trabaja Erick Aguero? (empresa, lugar de trabajo, organización)",
+    "answer": "Actualmente colabora en proyectos tecnológicos y también participa en iniciativas de transformación digital.",
+    "tags": ["trabajo", "ubicacion"]
+  },
+  {
+    "question": "¿Qué estudios tiene Erick Aguero? (formación, carrera, educación)",
+    "answer": "Es Ingeniero en Informática, con experiencia en desarrollo de software y manejo de proyectos IT.",
+    "tags": ["educacion", "perfil"]
+  },
+  {
+    "question": "¿En qué tecnologías se especializa Erick Aguero? (herramientas, conocimientos técnicos)",
+    "answer": "Tiene experiencia en .NET, ASP.NET MVC, C#, SQL Server, Entity Framework y soluciones de integración.",
+    "tags": ["tecnologia", "habilidades"]
+  },
+  {
+    "question": "¿Habla inglés Erick Aguero? (idiomas, inglés, comunicación)",
+    "answer": "Sí, tiene nivel intermedio de inglés (B1), lo que le permite comunicarse y trabajar en entornos bilingües.",
+    "tags": ["idiomas", "habilidades"]
+  },
+  {
+    "question": "¿Qué experiencia tiene Erick Aguero? (trayectoria, proyectos, historial laboral)",
+    "answer": "Más de 4 años de experiencia en desarrollo de software, integración de sistemas y gestión de proyectos digitales.",
+    "tags": ["experiencia", "perfil"]
+  },
+  {
+    "question": "¿Cuál es la disposición laboral de Erick Aguero? (disponibilidad, horario, flexibilidad)",
+    "answer": "Está dispuesto a trabajar en cualquier área que aporte valor y aprendizaje, con actitud proactiva y flexible.",
+    "tags": ["trabajo", "disponibilidad"]
+  },
+  {
+    "question": "¿Cuáles son los intereses de Erick Aguero? (intereses profesionales, áreas de interés)",
+    "answer": "Le interesan desarrollo de software, inteligencia artificial y tecnología con impacto social.",
+    "tags": ["intereses", "perfil"]
+  },
+  {
+    "question": "¿Qué habilidades blandas tiene Erick Aguero? (soft skills, competencias, capacidades)",
+    "answer": "Proactividad, comunicación, liderazgo, trabajo en equipo, adaptabilidad y aprendizaje constante.",
+    "tags": ["habilidades", "soft_skills"]
   }
 
 
