@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 from .db import init_db, seed_if_empty, get_session
 from .models import FAQ
 from .schemas import FAQOut, FAQIn, QueryIn, QueryOut
-from .nlp import engine, THRESH_UNDERSTOOD, THRESH_AMBIG
+from .nlp import engine, ALPHA, THRESH_UNDERSTOOD, THRESH_AMBIG
 
 # Cargar variables de .env (opcional; igual tomará variables del entorno)
 load_dotenv()
@@ -41,7 +41,14 @@ def on_startup() -> None:
 
 @app.get("/health")
 def health():
-    return {"status": "ok", "nlp_ready": engine.is_ready()}
+    return {
+        "status": "ok",
+        "nlp_ready": engine.is_ready(),
+        "alpha": ALPHA,
+        "understood": THRESH_UNDERSTOOD,
+        "ambiguous": THRESH_AMBIG,
+    }
+
 
 @app.get("/api/faq", response_model=List[FAQOut])
 def list_faqs(session: Session = Depends(get_session)):
@@ -124,8 +131,9 @@ def query(payload: QueryIn, session: Session = Depends(get_session)):
 from pathlib import Path
 from fastapi.staticfiles import StaticFiles
 
-ROOT_DIR = Path(__file__).resolve().parents[1]  # repo root
+ROOT_DIR = Path(__file__).resolve().parents[1]
 FRONTEND_DIR = ROOT_DIR / "frontend"
+app.mount("/", StaticFiles(directory=str(FRONTEND_DIR), html=True), name="frontend")
 
 # Sirve el frontend estático en "/"
 # (mantén los endpoints /api/* y /docs como están)

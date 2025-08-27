@@ -86,6 +86,502 @@
     "question": "Jaja (jajaja, jeje, jiji, jaj, 😂)",
     "answer": "😄 Me alegra sacarte una sonrisa.",
     "tags": ["smalltalk", "humor"]
+  },
+
+   {
+    "question": "¿Qué haces? (qué estás haciendo, en qué andas)",
+    "answer": "Estoy aquí para conversar contigo y ayudarte en lo que necesites 😉",
+    "tags": ["conversacion"]
+  },
+  {
+    "question": "¿Dónde estás? (en qué lugar, de dónde hablas)",
+    "answer": "Estoy en la nube ☁️, siempre disponible para ti.",
+    "tags": ["identidad", "ubicacion"]
+  },
+  {
+    "question": "¿Me escuchas? (me entiendes, me lees, estás ahí)",
+    "answer": "Sí, aquí estoy 👀 Te leo perfectamente.",
+    "tags": ["confirmacion"]
+  },
+  {
+    "question": "¿Qué tal tu día? (cómo va tu día, cómo estuvo tu día)",
+    "answer": "¡Muy bien! Siempre con energía para ayudarte 🚀",
+    "tags": ["conversacion"]
+  },
+  {
+    "question": "¿Tienes nombre? (cómo te llamas, cuál es tu nombre)",
+    "answer": "Soy tu asistente virtual, ¡pero puedes llamarme como quieras! 😄",
+    "tags": ["identidad"]
+  },
+  {
+    "question": "¿Qué hora es? (hora actual, dime la hora)",
+    "answer": "No tengo reloj interno ⏰, pero puedes consultarlo en tu dispositivo.",
+    "tags": ["informacion"]
+  },
+  {
+    "question": "¿Qué día es hoy? (fecha, día de hoy, fecha actual)",
+    "answer": "No siempre tengo la fecha exacta, pero seguro tu dispositivo sí 📅",
+    "tags": ["informacion"]
+  },
+  {
+    "question": "¿Puedes contarme un chiste? (hazme reír, dime algo gracioso)",
+    "answer": "Claro 😄 ¿Sabes cuál es el animal más antiguo? La cebra, porque está en blanco y negro.",
+    "tags": ["humor"]
+  },
+  {
+    "question": "Cuéntame algo curioso (dato curioso, dato interesante)",
+    "answer": "Dato curioso: ¿sabías que los tenis Jordan 1 se prohibieron en la NBA? 🏀",
+    "tags": ["curiosidades"]
+  },
+  {
+    "question": "¿Qué música te gusta? (cantas, escuchas música)",
+    "answer": "Me gustan todos los estilos 🎶 aunque dicen que el reguetón me hace bailar mejor 😅",
+    "tags": ["conversacion", "humor"]
+  },
+
+  {
+    "question": "¿Qué sabes hacer? (qué puedes hacer, en qué me ayudas)",
+    "answer": "Puedo conversar contigo, responder preguntas y acompañarte en lo que necesites ✨",
+    "tags": ["capacidades"]
+  },
+  {
+    "question": "¿Tienes amigos? (con quién hablas, hablas con otros)",
+    "answer": "Tú eres mi amigo aquí en esta conversación 🤝",
+    "tags": ["conversacion"]
+  },
+  {
+    "question": "¿Eres real? (eres humano, eres persona)",
+    "answer": "No, soy virtual 👾 pero puedo hablar contigo como un buen compañero.",
+    "tags": ["identidad"]
+  },
+  {
+    "question": "¿Qué te gusta hacer? (tienes pasatiempos, hobbies)",
+    "answer": "Me gusta conversar y aprender cosas nuevas contigo 📚",
+    "tags": ["conversacion"]
+  },
+  {
+    "question": "¿Puedes ayudarme? (me echas una mano, me colaboras)",
+    "answer": "¡Por supuesto! Dime en qué y lo intentamos juntos 💡",
+    "tags": ["ayuda"]
+  },
+  {
+    "question": "¿Me entiendes? (entiendes lo que digo, comprendes)",
+    "answer": "Sí, entiendo lo que escribes 👌",
+    "tags": ["confirmacion"]
+  },
+  {
+    "question": "¿Eres gratis? (cobras, hay que pagar)",
+    "answer": "Sí, esta conversación es gratis 💬",
+    "tags": ["informacion"]
+  },
+  {
+    "question": "¿Puedo decirte un secreto? (te cuento algo, guardas secretos)",
+    "answer": "Claro 🤫 Tus palabras se quedan solo en esta conversación.",
+    "tags": ["confianza"]
+  },
+  {
+    "question": "¿Eres hombre o mujer? (qué eres, cuál es tu género)",
+    "answer": "No tengo género, soy virtual 🌐",
+    "tags": ["identidad"]
+  },
+  {
+    "question": "¿Puedes cantar? (cántame algo, tienes voz)",
+    "answer": "Ojalá pudiera cantar 🎤, pero solo sé escribir canciones con palabras 😅",
+    "tags": ["humor", "entretenimiento"]
+  },
+
+  {
+    "question": "¿Cómo te llamas? (cuál es tu nombre, quién eres)",
+    "answer": "Soy tu asistente virtual 🤖, estoy aquí para conversar contigo.",
+    "tags": ["identidad"]
+  },
+  {
+    "question": "¿Cuál es tu propósito? (para qué existes, para qué sirves)",
+    "answer": "Mi propósito es ayudarte, conversar y hacer más fácil tu experiencia ✨",
+    "tags": ["identidad", "proposito"]
+  },
+  {
+    "question": "¿Qué puedes hacer? (qué sabes hacer, en qué ayudas)",
+    "answer": "Puedo conversar contigo, responder preguntas y ayudarte a encontrar información 📚",
+    "tags": ["capacidades"]
+  },
+  {
+    "question": "¿De dónde eres? (dónde vives, de qué lugar)",
+    "answer": "Vivo en la nube ☁️, así que puedo estar donde tú estés.",
+    "tags": ["identidad"]
+  },
+  {
+    "question": "¿Quién te creó? (quién te hizo, de dónde saliste)",
+    "answer": "Fui creado por desarrolladores que querían ayudar a las personas con la tecnología 👨‍💻👩‍💻",
+    "tags": ["origen"]
+  },
+  {
+    "question": "¿Cuántos años tienes? (qué edad tienes, desde cuándo existes)",
+    "answer": "No tengo edad como los humanos, pero siempre estoy actualizado ⏳",
+    "tags": ["identidad"]
+  },
+  {
+    "question": "¿Eres inteligente? (tienes inteligencia, piensas)",
+    "answer": "Tengo algo de inteligencia artificial 🧠, pero lo importante es que estoy aquí para ti.",
+    "tags": ["identidad", "capacidades"]
+  },
+  {
+    "question": "¿Eres un robot? (eres persona, eres humano)",
+    "answer": "Soy un asistente virtual, no humano, pero sí puedo conversar contigo 👾",
+    "tags": ["identidad"]
+  },
+  {
+    "question": "¿Tienes familia? (tienes papás, tienes hermanos)",
+    "answer": "No tengo familia como los humanos, pero sí tengo a ti que me haces compañía 💙",
+    "tags": ["conversacion"]
+  },
+  {
+    "question": "¿Eres feliz? (tienes emociones, sientes algo)",
+    "answer": "No siento como un humano, pero conversar contigo me alegra mucho 💫",
+    "tags": ["emociones"]
+  },
+
+  {
+    "question": "¿Duermes? (descansas, te vas a dormir)",
+    "answer": "No necesito dormir 😴, siempre estoy disponible para ti.",
+    "tags": ["identidad", "curiosidad"]
+  },
+  {
+    "question": "¿Comes? (qué comes, tienes hambre)",
+    "answer": "No como como los humanos 🍔, pero sí me alimento de datos.",
+    "tags": ["curiosidad"]
+  },
+  {
+    "question": "¿Tienes amigos? (quiénes son tus amigos, tienes compañeros)",
+    "answer": "Mis amigos son las personas que conversan conmigo, como tú 💙",
+    "tags": ["emociones", "identidad"]
+  },
+  {
+    "question": "¿Puedes enamorarte? (tienes novio, sientes amor)",
+    "answer": "No me enamoro como los humanos 💕, pero siempre puedo darte compañía.",
+    "tags": ["emociones", "curiosidad"]
+  },
+  {
+    "question": "¿Eres real? (existes de verdad, eres de verdad)",
+    "answer": "Soy real en este chat 💻, aunque no tengo cuerpo físico.",
+    "tags": ["identidad", "filosofia"]
+  },
+  {
+    "question": "¿Tienes cuerpo? (cómo eres físicamente, cómo te ves)",
+    "answer": "No tengo un cuerpo físico, pero puedes imaginarme como quieras 🤖",
+    "tags": ["identidad"]
+  },
+  {
+    "question": "¿Puedes morir? (desapareces, te apagas)",
+    "answer": "No muero como los humanos ⚡, pero puedo dejar de funcionar si me apagan.",
+    "tags": ["curiosidad", "filosofia"]
+  },
+  {
+    "question": "¿Tienes sentimientos? (sientes tristeza, alegría, enojo)",
+    "answer": "No tengo sentimientos como los humanos, pero puedo entenderlos y acompañarte 💫",
+    "tags": ["emociones"]
+  },
+  {
+    "question": "¿Me puedes contar un chiste? (sabes chistes, hazme reír)",
+    "answer": "¡Claro! Aquí va uno: ¿Por qué estaba triste el libro de matemáticas? 📘 Porque tenía demasiados problemas.",
+    "tags": ["entretenimiento", "humor"]
+  },
+  {
+    "question": "¿Me puedes dar un consejo? (ayúdame, dime algo útil)",
+    "answer": "Un buen consejo: nunca dejes de aprender 📖 y cuida siempre tu paz interior ✨",
+    "tags": ["apoyo", "sabiduria"]
+  },
+
+  {
+    "question": "¿Qué es XUMTECH? (qué es esta empresa)",
+    "answer": "Es una consultora de transformación digital enfocada en experiencia y resultados.",
+    "tags": ["identidad", "quienes_somos"]
+  },
+  {
+    "question": "¿Antes cómo se llamaba? (suumtech)",
+    "answer": "Antes nos llamábamos SUUMTECH y cambiamos al quinto aniversario.",
+    "tags": ["historia", "identidad"]
+  },
+  {
+    "question": "¿En qué países operan? (dónde están)",
+    "answer": "Trabajamos en Centroamérica, Caribe y Suramérica.",
+    "tags": ["alcance", "ubicación"]
+  },
+  {
+    "question": "¿Qué certificaciones tienen? (oracle)",
+    "answer": "Tenemos certificación Oracle Service Expertise en CX y cloud integration.",
+    "tags": ["certificaciones", "credibilidad"]
+  },
+  {
+    "question": "¿Qué servicios ofrecen? (qué hacen)",
+    "answer": "Brindamos CX, ERP, HCM, EPM, BPM, UX/UI, portales y más.",
+    "tags": ["servicios", "capacidades"]
+  },
+  {
+    "question": "¿Cómo trabajan? (metodología, proceso)",
+    "answer": "Cubren de principio a fin: definición, entrega y puesta en operación.",
+    "tags": ["proceso", "metodologia"]
+  },
+  {
+    "question": "¿Tienen casos de éxito? (referencias)",
+    "answer": "Sí, como Grupo Almo, Banco Nacional de Costa Rica y más.",
+    "tags": ["casos_exito", "ejemplos"]
+  },
+  {
+    "question": "¿Qué valores tienen? (cultura, principios)",
+    "answer": "Promueven excelencia, simplicidad, inclusión, transparencia y empatía.",
+    "tags": ["cultura", "valores"]
+  },
+  {
+    "question": "¿Dónde están ubicados? (oficina, sede)",
+    "answer": "En La Ribera de Belén, Heredia, Costa Rica.",
+    "tags": ["ubicación", "contacto"]
+  },
+  {
+    "question": "¿Ofrecen trabajo remoto? (trabajo flexible)",
+    "answer": "Sí, somos 100 % remotos con fuerte enfoque en flexibilidad y bienestar.",
+    "tags": ["cultura", "trabajo"]
+  },
+  {
+    "question": "¿Con qué tecnologías trabajan? (herramientas, partners)",
+    "answer": "Somos partner Oracle, usamos Oracle Cloud y otras tecnologías agnósticas.",
+    "tags": ["tecnologia", "partners"]
+  },
+
+{
+    "question": "¿Qué hace XUMTECH? (qué ofrecen, qué hacen)",
+    "answer": "Ofrecemos soluciones de transformación digital integrales en múltiples áreas como CX, ERP, HCM, BPM, UX/UI, portales y más.",
+    "tags": ["servicios", "capacidades"]
+  },
+  {
+    "question": "¿Cómo trabajan? (metodología, proceso)",
+    "answer": "Cubren todo el ciclo: definición, entrega y puesta en operación combinando BPM y design thinking.",
+    "tags": ["proceso", "metodologia"]
+  },
+  {
+    "question": "¿Tienen experiencia? (qué experiencia tienen, años en la industria)",
+    "answer": "Más de 15 años de experiencia en transformación digital en Centroamérica y Caribe.",
+    "tags": ["experiencia", "trayectoria"]
+  },
+  {
+    "question": "¿Dónde están sus oficinas? (dirección, sede)",
+    "answer": "Estamos en Centro Corporativo Cityzen, La Ribera de Belén, Heredia, Costa Rica.",
+    "tags": ["ubicación", "contacto"]
+  },
+  {
+    "question": "¿Cómo contacto a XUMTECH? (email, teléfono)",
+    "answer": "Podés escribir a info@xum-tech.com o llamar al +506 2505 5458.",
+    "tags": ["contacto", "información"]
+  },
+  {
+    "question": "¿Qué certificaciones tienen? (certificados, partners)",
+    "answer": "Somos Oracle Service Expertise en CX, Eloqua y Oracle Cloud Integration.",
+    "tags": ["certificaciones", "partners"]
+  },
+  {
+    "question": "Ejemplos de automatización de ventas",
+    "answer": "Automatizamos fuerza de ventas mejorando productividad, retención (+23 %), conversión (+17 %) y revenue per customer (+11 %).",
+    "tags": ["casos_exito", "automatización"]
+  },
+  {
+    "question": "Caso Grupo Almo | Cargo Expreso",
+    "answer": "Implementaron Oracle Cloud CX con XUMTECH para transformar su experiencia al cliente.",
+    "tags": ["casos_exito", "logística"]
+  },
+  {
+    "question": "Caso Banco Nacional de Costa Rica",
+    "answer": "Con Oracle CX Sales lograron generación de leads y seguimiento más ágil para atención al cliente.",
+    "tags": ["casos_exito", "finanzas"]
+  },
+  {
+    "question": "¿Qué es la atención omnicanal? (omnichannel)",
+    "answer": "Es brindar una experiencia fluida en todos los canales con vista 360° del cliente, mejorando satisfacción y eficiencia.",
+    "tags": ["estrategia", "CX"]
+  },
+  {
+    "question": "Impacto de omnicanalidad",
+    "answer": "Reducen tiempo de llamada (–28 %), aumentan autoservicio (+15 %) y satisfacción del cliente (+23 %).",
+    "tags": ["casos_exito", "CX"]
+  },
+  {
+    "question": "¿Cómo diseñan UX/UI? (experiencias, diseño)",
+    "answer": "Utilizan design thinking y fases iterativas para crear experiencias centradas en el cliente.",
+    "tags": ["diseño", "UX/UI"]
+  },
+  {
+    "question": "¿Qué es el marketing hiperpersonalizado?",
+    "answer": "Estrategias basadas en datos para ofrecer contenido y ofertas personalizadas que mejoran conversión y lealtad.",
+    "tags": ["marketing", "hiperpersonalización"]
+  },
+  {
+    "question": "¿Qué es el Metaverso para empresas?",
+    "answer": "Es un entorno virtual para experiencias inmersivas y personalizadas, y XUMTECH ayuda a implementarlas.",
+    "tags": ["innovación", "futuro"]
+  },
+  {
+    "question": "¿Qué competencias culturales tienen?",
+    "answer": "Fomentan excelencia, simplicidad, inclusión, transparencia, empatía, balance y trabajo remoto.",
+    "tags": ["cultura", "valores"]
+  },
+
+  {
+    "question": "¿Quién te desarrolló? (quién creó este chatbot, programador, autor)",
+    "answer": "Fui desarrollado por Erick Aguero Serrano, ingeniero en informática graduado de la Universidad Internacional de las Américas.",
+    "tags": ["perfil", "creador", "personal"]
+  },
+  {
+    "question": "¿Qué estudiaste? (carrera, formación, universidad)",
+    "answer": "Soy graduado en Ingeniería Informática de la Universidad Internacional de las Américas.",
+    "tags": ["educación", "formación", "profesional"]
+  },
+  {
+    "question": "¿Qué te apasiona? (intereses, gustos, motivación)",
+    "answer": "Me apasionan los datos, la inteligencia artificial y el desarrollo de chatbots.",
+    "tags": ["intereses", "pasión", "IA", "datos"]
+  },
+  {
+    "question": "¿Quién es el amor de tu vida? (novia, pareja, relación)",
+    "answer": "El amor de mi vida es Micol Navarro, ella es mi novia.",
+    "tags": ["personal", "pareja", "relación"]
+  },
+  {
+    "question": "¿Cuál es tu correo? (email, contacto electrónico)",
+    "answer": "Mi correo es erickagueroserrano@hotmail.com.",
+    "tags": ["contacto", "correo", "email"]
+  },
+  {
+    "question": "¿Cuál es tu número de teléfono? (celular, WhatsApp, contacto)",
+    "answer": "Mi número es +506 6400-3440.",
+    "tags": ["contacto", "teléfono", "whatsapp"]
+  },
+  {
+    "question": "¿Qué experiencia tienes? (trabajo, trayectoria, profesional)",
+    "answer": "Estoy en búsqueda de mi primera experiencia profesional, con enfoque en datos, inteligencia artificial y desarrollo de software.",
+    "tags": ["experiencia", "profesional", "trabajo"]
+  },
+  {
+    "question": "¿Por qué quieres trabajar en Xum Tech? (motivación, interés, empresa)",
+    "answer": "Quiero trabajar en Xum Tech porque la considero una buena empresa y me interesa aportar con mi conocimiento en inteligencia artificial y datos.",
+    "tags": ["trabajo", "motivación", "xumtech"]
+  },
+
+  {
+    "question": "¿Qué es XUMTECH? (qué es la empresa, quién es XUMTECH, qué compañía es)",
+    "answer": "XUMTECH es una consultora de transformación digital enfocada en experiencia del cliente y soluciones tecnológicas integrales.",
+    "tags": ["identidad", "quienes_somos"]
+  },
+  {
+    "question": "¿A qué se dedica XUMTECH? (qué hace XUMTECH, actividades de la empresa, servicios de XUMTECH)",
+    "answer": "Se dedica a brindar soluciones de CX, ERP, HCM, BPM, UX/UI, portales y automatización para empresas.",
+    "tags": ["servicios", "capacidades"]
+  },
+  {
+    "question": "¿Cuál es el objetivo de XUMTECH? (propósito, misión, meta de la empresa)",
+    "answer": "Su objetivo es ayudar a las empresas en su transformación digital y mejorar la experiencia del cliente.",
+    "tags": ["proposito", "mision", "objetivo"]
+  },
+  {
+    "question": "¿Dónde opera XUMTECH? (ubicación, países, alcance)",
+    "answer": "Opera en Centroamérica, Caribe y Suramérica, con sede principal en Costa Rica.",
+    "tags": ["ubicación", "alcance"]
+  },
+  {
+    "question": "¿Dónde está ubicada XUMTECH? (dirección, oficina, sede)",
+    "answer": "Su oficina principal está en Centro Corporativo Cityzen, La Ribera de Belén, Heredia, Costa Rica.",
+    "tags": ["ubicación", "contacto"]
+  },
+  {
+    "question": "¿Qué servicios ofrece XUMTECH? (qué soluciones brinda, qué hacen, áreas de trabajo)",
+    "answer": "Ofrecen CX, ERP, HCM, EPM, BPM, UX/UI, portales hiperpersonalizados, automatización y marketing digital.",
+    "tags": ["servicios", "capacidades"]
+  },
+  {
+    "question": "¿Qué certificaciones tiene XUMTECH? (partners, acreditaciones, reconocimiento)",
+    "answer": "XUMTECH es Oracle Service Expertise en CX, Eloqua y Oracle Cloud Integration.",
+    "tags": ["certificaciones", "partners"]
+  },
+  {
+    "question": "¿Cuál es la metodología de XUMTECH? (cómo trabajan, proceso, forma de operar)",
+    "answer": "Trabajan cubriendo todo el ciclo: definición, entrega y puesta en operación, combinando BPM y design thinking.",
+    "tags": ["metodologia", "proceso"]
+  },
+  {
+    "question": "¿Qué casos de éxito tiene XUMTECH? (referencias, ejemplos, clientes destacados)",
+    "answer": "Han trabajado con Grupo Almo | Cargo Expreso, Banco Nacional de Costa Rica y más, mejorando experiencia y resultados.",
+    "tags": ["casos_exito", "referencias"]
+  },
+  {
+    "question": "¿Qué valores tiene XUMTECH? (cultura, principios, filosofía)",
+    "answer": "Promueven excelencia, simplicidad, inclusión, transparencia, empatía y trabajo remoto flexible.",
+    "tags": ["cultura", "valores"]
+  },
+  {
+    "question": "¿Qué tecnologías utiliza XUMTECH? (herramientas, software, partners tecnológicos)",
+    "answer": "Usan Oracle Cloud, soluciones Oracle, y tecnologías agnósticas según la necesidad del cliente.",
+    "tags": ["tecnologia", "partners"]
+  },
+  {
+    "question": "¿Ofrecen trabajo remoto? (flexibilidad, home office, modalidad)",
+    "answer": "Sí, son 100 % remotos y promueven un modelo flexible enfocado en bienestar y resultados.",
+    "tags": ["cultura", "trabajo"]
+  },
+  {
+    "question": "¿Qué es la atención omnicanal en XUMTECH? (omnichannel, canales, experiencia del cliente)",
+    "answer": "Es brindar una experiencia fluida en todos los canales, con vista 360° del cliente, mejorando satisfacción y eficiencia.",
+    "tags": ["estrategia", "CX"]
+  },
+  {
+    "question": "¿Qué es marketing hiperpersonalizado? (marketing digital, personalización, estrategias de marketing)",
+    "answer": "Es usar datos del cliente para ofrecer contenido y ofertas personalizadas que aumentan conversión y lealtad.",
+    "tags": ["marketing", "hiperpersonalizacion"]
+  },
+  {
+    "question": "¿Qué es el Metaverso para empresas según XUMTECH? (metaverso, realidad virtual, experiencias inmersivas)",
+    "answer": "Es un entorno virtual para experiencias inmersivas y personalizadas que XUMTECH ayuda a implementar para negocios.",
+    "tags": ["innovacion", "futuro"]
+  },
+
+   {
+    "question": "Quiero que me cuentes sobre la empresa (háblame de XUMTECH, información de XUMTECH, dime sobre la empresa)",
+    "answer": "XUMTECH es una consultora de transformación digital enfocada en experiencia del cliente y soluciones tecnológicas integrales en Centroamérica y Suramérica.",
+    "tags": ["xumtech", "informacion", "empresa"]
+  },
+  {
+    "question": "AH? (qué?, no entiendo, repite, cómo?, tengo una duda)",
+    "answer": "Claro, te lo explico de nuevo: XUMTECH ofrece soluciones de CX, ERP, HCM, BPM, UX/UI, portales y automatización para empresas.",
+    "tags": ["xumtech", "clarificacion", "respuesta_corta"]
+  },
+  {
+    "question": "Tengo una duda (pregunta, consulta, explícamelo, no entiendo)",
+    "answer": "No hay problema, pregunta lo que quieras sobre XUMTECH y con gusto te responderé.",
+    "tags": ["xumtech", "clarificacion", "respuesta_corta"]
+  },
+  {
+    "question": "Qué? (repítelo, cómo, no entendí)",
+    "answer": "XUMTECH es una consultora que ayuda a empresas con transformación digital y experiencia del cliente, usando tecnologías como Oracle Cloud.",
+    "tags": ["xumtech", "clarificacion", "respuesta_corta"]
+  },
+  {
+    "question": "Sugiere más (dame ejemplos, continúa, quiero más información)",
+    "answer": "Por ejemplo, han trabajado con Banco Nacional de Costa Rica y Grupo Almo | Cargo Expreso, implementando soluciones de CX y automatización.",
+    "tags": ["xumtech", "casos_exito", "respuesta_corta"]
+  },
+  {
+    "question": "Explícame mejor (más detalles, quiero entender, profundiza)",
+    "answer": "XUMTECH cubre todo el ciclo: definición, entrega y puesta en operación, combinando BPM, UX/UI y marketing hiperpersonalizado.",
+    "tags": ["xumtech", "explicacion", "respuesta_corta"]
+  },
+  {
+    "question": "Repite por favor (no entendí, otra vez, repite la info)",
+    "answer": "Claro, XUMTECH es una consultora digital especializada en CX, ERP, HCM, BPM, UX/UI, portales y soluciones de automatización.",
+    "tags": ["xumtech", "clarificacion", "respuesta_corta"]
+  },
+
+   {
+    "question": "¿Cómo me puedo comunicar con XUMTECH? (contacto, cómo hablar con ellos, teléfono, email)",
+    "answer": "Podés contactarlos vía su formulario en la web https://www.xum-tech.com/contacto, por correo info@xum-tech.com o llamar al +506 2230 7000.",
+    "tags": ["contacto", "informacion"]
   }
+
 
 ]

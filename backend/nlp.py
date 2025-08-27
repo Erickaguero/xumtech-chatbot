@@ -8,11 +8,19 @@ from sklearn.metrics.pairwise import linear_kernel
 from rapidfuzz import fuzz
 
 # --------- Tuning (más sensible) ---------
-ALPHA = 0.6                 # peso base TF-IDF (el resto es fuzzy). Antes 0.8
-THRESH_UNDERSTOOD = 0.55    # responde directo más seguido
-THRESH_AMBIG = 0.35         # menos "no entendido", más sugerencias
-TOPK = 3
+import os
 
+def getenv_float(name: str, default: float) -> float:
+    try:
+        return float(os.getenv(name, str(default)))
+    except (TypeError, ValueError):
+        return default
+
+# Defaults más flexibles (se aplican al hacer commit y desplegar)
+ALPHA = getenv_float("NLP_ALPHA", 0.6)          # más peso al fuzzy que antes
+THRESH_UNDERSTOOD = getenv_float("NLP_UNDERSTOOD", 0.55)  # responde directo con menor puntaje
+THRESH_AMBIG = getenv_float("NLP_AMBIG", 0.35)            # menos "no entendido"
+TOPK = 3
 # --------- Normalización ---------
 _normalize_re = re.compile(r"[^\w\s]", flags=re.UNICODE)
 
